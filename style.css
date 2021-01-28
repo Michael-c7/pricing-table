@@ -2,12 +2,12 @@
 
 :root {
     /*color scheme*/
-    /* --color:#FBC846;
+    --color:#FBC846;
+    --color:#EACF98;
+    --color:#CB924C;
+    --color:#FC4070;
     --color:#F3F3F3;
     --color:#1F1F28;
-    --color:#CB924C;
-    --color:#EACF98;
-    --color:#FC4070; */
 
 }
 
@@ -19,4 +19,33 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: rgb(251,200,70);
+    /* background: linear-gradient(90deg, rgba(251,200,70,1) 0%, rgba(252,64,112,1) 86%); */
+}
+
+
+
+
+
+/*pricing-table*/
+.pricing-table {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:#eee;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:50rem;
+    border-radius: 10px;
+}
+
+.cards {
+    display:flex;
+}
+
+.card {
+    background-color:#fff;
 }
