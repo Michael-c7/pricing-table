@@ -4,12 +4,11 @@
     /*color scheme*/
     --yellow:#FBC846;
     --red:#FC4070;
-    --gradient-1:linear-gradient(90deg, rgba(251,200,70,1) 0%, rgba(252,64,112,1) 86%);
+    --yellow-red-gradient-1:linear-gradient(122deg, rgba(251,200,70,1) 5%, rgba(252,64,112,1) 93%);;
     /* --color:#EACF98;
     --color:#CB924C; */
     --white:#F3F3F3;
     --black:#1F1F28;
-
 }
 
 *,
@@ -20,11 +19,19 @@
     margin:0;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background:var(--yellow);
+html {
+    height: 100%;
 }
 
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background:var(--yellow);
+    background:var(--yellow-red-gradient-1);
+    font-family: 'Poppins', sans-serif;
+}
 
 li {
      list-style: none;
@@ -36,7 +43,6 @@ li {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items:center; */
     background-color:#eee;
     position: absolute;
     left:50%;
